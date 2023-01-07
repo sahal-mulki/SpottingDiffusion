@@ -1,2 +1,3 @@
 # SpottingDiffusion
-Code for a CNN-based method of detecting AI generated images.
+
+This repository is the official implementation of SpottingDiffusion : A CNN-based method of detecting AI generated images.
