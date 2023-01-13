@@ -175,8 +175,6 @@ model.summary()
 
 #Compile model with Sparse Categorical Crossentropy loss.
 
-lr_rate = float(args.learning_rate)
-
 model.compile(loss = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True), optimizer=tf.keras.optimizers.Adam(learning_rate=float(args.learning_rate[0])), metrics=['accuracy',])
 
 #And finally, train the model for 4 epochs.
