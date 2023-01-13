@@ -31,7 +31,7 @@ PS: You can also easily use the Google Colab version of the trainer, which has e
 Login with kaggle API, and then,
 
 ```
-kaggle datasets download sahalmulki/stable-diffusion-generated-images/versions/3
+kaggle datasets download sahalmulki/stable-diffusion-generated-images
 kaggle datasets download sahalmulki/spottingdiffusion-testing-dataset
 
 mkdir testing
