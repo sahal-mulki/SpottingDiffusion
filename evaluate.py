@@ -23,7 +23,7 @@ test_data = tf.keras.utils.image_dataset_from_directory(
     seed=123,
     interpolation='bilinear',
     follow_links=False,
-    batch_size=batch_size,
+    batch_size=5,
     image_size=(256, 256)
 )
 
