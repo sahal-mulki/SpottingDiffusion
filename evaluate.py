@@ -13,10 +13,10 @@ parser.add_argument('model_path', metavar='modelpath', type=str, nargs=1,
 
 args = parser.parse_args()
 
-model = tf.saved_model.load(args.modelpath[0])
+model = tf.saved_model.load(args.model_path[0])
 
 test_data = tf.keras.utils.image_dataset_from_directory(
-    args.datapath[0],
+    args.data_path[0],
     labels='inferred',
     color_mode='rgb',
     shuffle=True,
