@@ -4,6 +4,12 @@ This repository is the official implementation of SpottingDiffusion : A CNN-base
 
 ![SpottingDiffusion tried on 3 random images from the dataset.](https://i.imgur.com/aSPB4nS.png)
 
+# Table of Contents.
+- [Table of Contents](#table-of-contents)
+- [Abstract](#abstract)
+- [Requirements](#requirements)
+- [Training](#training)
+- 
 # Abstract
 
 This study aims to present a novel method of detecting images made by “Latent Diffusion Models” as described by <a href="https://arxiv.org/abs/2112.10752"> Rombach et al.</a> 
