@@ -47,7 +47,7 @@ tf.random.set_seed(123)
 
 os.makedirs("data")
 
-with ZipFile("stable-diffusion-generated-images.zip", 'r') as zObject: 
+with ZipFile("stable-diffusion-generated-images.zip", 'r') as zObject:
     zObject.extractall(
         path="/data/")
     
