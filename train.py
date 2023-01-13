@@ -179,7 +179,7 @@ model.compile(loss = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=T
 
 #And finally, train the model for 4 epochs.
 
-history = model.fit(train_data, epochs=args.epochs[0], validation_data = val_data, callbacks=[tensorboard_callback])
+history = model.fit(train_data, epochs=args.epochs[0], validation_data = val_data)
 
 print("")
 print("Training done! Saving model with name SpottingDiffusion.....")
