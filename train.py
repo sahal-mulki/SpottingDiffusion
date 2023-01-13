@@ -108,8 +108,6 @@ for filename in tqdm(os.listdir(stable_dir)):
 
 batch_size = 5
 
-print(args.dropout, args.learning_rate, args.epochs)
-
 train_data = tf.keras.utils.image_dataset_from_directory(
     base_dir,
     labels='inferred',
@@ -157,7 +155,7 @@ base_model.trainable = False
 
 #Add on Dropout and a Dense Layer with 256 nodes onto the base model.
 
-dropout_amount = float(args.dropout)
+dropout_amount = float(args.dropout[0])
 
 x = data_augmentation(inputs)
 
@@ -176,11 +174,11 @@ model.summary()
 
 lr_rate = float(args.learning_rate)
 
-model.compile(loss = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True), optimizer=tf.keras.optimizers.Adam(learning_rate=float(args.learning_rate)), metrics=['accuracy',])
+model.compile(loss = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True), optimizer=tf.keras.optimizers.Adam(learning_rate=float(args.learning_rate[0])), metrics=['accuracy',])
 
 #And finally, train the model for 4 epochs.
 
-history = model.fit(train_data, epochs=args.epochs, validation_data = val_data, callbacks=[tensorboard_callback])
+history = model.fit(train_data, epochs=args.epochs[0], validation_data = val_data, callbacks=[tensorboard_callback])
 
 print("")
 print("Training done! Saving model with name SpottingDiffusion.....")
