@@ -9,7 +9,7 @@ This repository is the official implementation of SpottingDiffusion : A CNN-base
 - [Abstract](#abstract)
 - [Requirements](#requirements)
 - [Training](#training)
-- 
+- [Pretrained](#pretrained)
 # Abstract
 
 This study aims to present a novel method of detecting images made by “Latent Diffusion Models” as described by <a href="https://arxiv.org/abs/2112.10752"> Rombach et al.</a> 
@@ -45,3 +45,7 @@ unzip /content/spottingdiffusion-testing-dataset.zip -d /testing/
 
 ### Evaluate the model on the testing dataset using this command:
 `python evaluate.py /testing SpottingDiffusion`
+
+# Pretrained
+
+### A pretrained model for SpottingDiffusion is available in the SavedModel format in the `pretrained` directory.
