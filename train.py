@@ -157,6 +157,9 @@ base_model.trainable = False
 
 dropout_amount = float(args.dropout[0])
 
+
+inputs = tf.keras.Input(shape=(256, 256, 3))
+
 x = data_augmentation(inputs)
 
 x = base_model(inputs, training=False)
