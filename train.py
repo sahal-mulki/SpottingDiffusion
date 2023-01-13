@@ -11,6 +11,7 @@ from tensorflow.keras import layers
 from tensorflow.keras.models import Sequential
 from tqdm import tqdm
 import argparse
+from zipfile import ZipFile
 
 #Setting up cli code.
 
@@ -42,10 +43,17 @@ random.seed(123)
 np.random.seed(123)
 tf.random.set_seed(123)
 
-#@title ##Reviewing the dataset.
+#Reviewing the dataset.
 
-import os
+os.makedirs("data")
 
+with ZipFile("stable-diffusion-generated-images.zip", 'r') as zObject:
+  
+    # Extracting all the members of the zip 
+    # into a specific location.
+    zObject.extractall(
+        path="/data/")
+    
 base_dir = '/data'
 
 real_dir = os.path.join(base_dir, 'laion400m-laion4.75/laion400m-laion4.75+/laion400m-laion4.75+')
