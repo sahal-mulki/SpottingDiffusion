@@ -106,6 +106,8 @@ for filename in tqdm(os.listdir(stable_dir)):
 
 #Set up testing and training data.
 
+batch_size = 5
+
 train_data = tf.keras.utils.image_dataset_from_directory(
     base_dir,
     labels='inferred',
