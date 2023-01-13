@@ -13,7 +13,7 @@ parser.add_argument('model_path', metavar='modelpath', type=str, nargs=1,
 
 args = parser.parse_args()
 
-model = tf.saved_model.load(args.model_path[0])
+model = tf.keras.models.load_model(args.model_path[0])
 
 test_data = tf.keras.utils.image_dataset_from_directory(
     args.data_path[0],
@@ -27,4 +27,13 @@ test_data = tf.keras.utils.image_dataset_from_directory(
     image_size=(256, 256)
 )
 
+print("Commencing evalutation.")
+
 results = model.evaluate(test_data)
+
+print("")
+
+print("Model Stats on given data:")
+
+print("Loss: " + results[0])
+print("Accuracy: " + results[1])
