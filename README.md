@@ -19,6 +19,9 @@ The need of detecting these images arises when these technologies will inevitabl
 
 # Requirements
 
+PS: You can also easily use the Google Colab version of the trainer, which has evaluation and downloading automatically built in. 
+
+<a target="_blank" href="https://colab.research.google.com/github/sahal-mulki/SpottingDiffusion/blob/main/SpottingDiffusion.ipynb"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 ### To install dependencies:
 
 `pip install -r requirements.txt`
