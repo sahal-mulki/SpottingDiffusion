@@ -44,7 +44,7 @@ unzip /content/spottingdiffusion-testing-dataset.zip -d /testing/
 `python train.py 12 0.3 0.00001`
 
 ### Evaluate the model on the testing dataset using this command:
-`python evaluate.py /testing SpottingDiffusion`
+`python evaluate.py /full-path-to-dir/testing pretrained/pretrained-spotting-diffusion`
 
 # Pretrained
 
