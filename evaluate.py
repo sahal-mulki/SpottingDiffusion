@@ -35,5 +35,5 @@ print("")
 
 print("Model Stats on given data:")
 
-print("Loss: " + results[0])
-print("Accuracy: " + results[1])
+print("Loss: " + str(results[0]))
+print("Accuracy: " + str(results[1]))
