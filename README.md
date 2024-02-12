@@ -19,9 +19,8 @@ The need of detecting these images arises when these technologies will inevitabl
 
 # Requirements
 
-PS: You can also easily use the Google Colab version of the trainer, which has evaluation and downloading automatically built in. 
+You may also easily use the Google Colab version of the trainer, which has training and downloading automatically built in.  <a target="_blank" href="https://colab.research.google.com/github/sahal-mulki/SpottingDiffusion/blob/main/SpottingDiffusion.ipynb"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-<a target="_blank" href="https://colab.research.google.com/github/sahal-mulki/SpottingDiffusion/blob/main/SpottingDiffusion.ipynb"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 ### To install dependencies:
 
 `pip install -r requirements.txt`
@@ -44,7 +43,8 @@ unzip /content/spottingdiffusion-testing-dataset.zip -d /testing/
 `python train.py 12 0.3 0.00001`
 
 ### Evaluate the model on the testing dataset using this command:
-`python evaluate.py /full-path-to-dir/testing pretrained/pretrained-spotting-diffusion`
+`python evaluate.py /full-path-to-dir/testing pretrained/pretrained-spotting-diffusion` 
+Google Colab Notebook for Evaluation: <a target="_blank" href="https://colab.research.google.com/github/sahal-mulki/SpottingDiffusion/blob/main/SpottingDiffusion_Testing.ipynb"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 # Pretrained
 
