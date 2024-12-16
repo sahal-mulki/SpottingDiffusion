@@ -1,6 +1,6 @@
 # SpottingDiffusion <a target="_blank" href="https://colab.research.google.com/github/sahal-mulki/SpottingDiffusion/blob/main/SpottingDiffusion.ipynb"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-This repository is the official implementation of SpottingDiffusion : A CNN-based method of detecting AI generated images.
+This repository is the official implementation of [SpottingDiffusion: Using transfer learning to detect Latent Diffusion Model-synthesized images](https://doi.org/10.59720/23-256)
 
 ![SpottingDiffusion tried on 3 random images from the dataset.](https://i.imgur.com/aSPB4nS.png)
 
@@ -49,3 +49,16 @@ Google Colab Notebook for Evaluation: <a target="_blank" href="https://colab.res
 # Pretrained
 
 ### A pretrained model for SpottingDiffusion is available in the SavedModel format in the `pretrained` directory.
+
+# Cite this:
+
+```
+@article{spottingdiffusionmulki2024,
+title={Spottingdiffusion: Using transfer learning to detect latent diffusion model-synthesized images},
+DOI={10.59720/23-256},
+journal={Journal of Emerging Investigators},
+author={Sahal Mulki, Muhammad and Adil Mulki, Sadaf},
+year={2024},
+month={Nov}
+}
+```
