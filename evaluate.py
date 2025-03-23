@@ -14,6 +14,11 @@ parser.add_argument('model_path', metavar='modelpath', type=str, nargs=1,
 args = parser.parse_args()
 
 model = tf.keras.models.load_model(args.model_path[0])
+use_hack = True
+if use_hack:
+  for variable in model.trainable_weights:
+    variable.regularizer = None
+
 
 test_data = tf.keras.utils.image_dataset_from_directory(
     args.data_path[0],
